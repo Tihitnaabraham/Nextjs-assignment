@@ -1,3 +1,4 @@
+import Image from "next/image";
 const categories = [
   "Woman's Fashion",
   "Men's Fashion",
@@ -73,7 +74,7 @@ export default function HeroBanner() {
               </a>
             </div>
             <div className="flex-1 flex justify-end items-center h-full">
-              <img
+              <Image
                 src="/iphones.jpg"
                 alt="iPhone 14"
                 className="h-[230px] object-contain"

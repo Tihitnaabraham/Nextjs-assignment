@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 
 export default function MusicExperienceBanner() {
   return (
@@ -42,7 +43,7 @@ export default function MusicExperienceBanner() {
         </div>
         {}
         <div className="flex-1 flex justify-end items-center">
-          <img
+          <Image
             src="/speaker.png"
             alt="JBL Boombox"
             className="w-[480px] h-auto object-contain drop-shadow-lg mr-40"

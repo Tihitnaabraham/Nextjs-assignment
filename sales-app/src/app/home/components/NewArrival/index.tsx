@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 
 import React from "react";
 
@@ -59,7 +60,7 @@ export default function NewArrival() {
             key={item.title}
             className={`relative rounded-lg overflow-hidden shadow-lg flex ${getGridClasses(idx)}`}
           >
-            <img
+            <Image
               src={item.image}
               alt={item.title}
               className="object-cover w-full h-full"

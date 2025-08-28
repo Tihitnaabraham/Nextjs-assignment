@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useRef } from "react";
+import Image from "next/image";
 
 const products = [
   {
@@ -150,7 +151,7 @@ export default function FreshSales() {
               </svg>
             </button>
             {}
-            <img
+            <Image
               src={p.image}
               alt={p.name}
               className="w-[160px] h-[130px] object-contain mb-2 bg-white rounded"

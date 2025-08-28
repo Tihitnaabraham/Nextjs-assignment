@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import Image from 'next/image';
 
 const Footer = () => (
   <footer className="bg-black text-white py-12 mt-16">
@@ -69,19 +70,19 @@ const Footer = () => (
         <p className="text-gray-400 text-xs mb-4">Save $3 with App New User Only</p>
         <div className="flex items-start gap-2">
           {}
-          <img
-            src="/QR code.png"
+          <Image
+            src={"/QR code.png"}
             alt="QR Code"
             className="w-17 h-18 rounded"
           />
           {}
           <div className="flex flex-col gap-2">
-            <img
+            <Image
               src="/google-play.png"
               alt="Google Play"
               className="h-7 w-auto"
             />
-            <img
+            <Image
               src="/app-store.png"
               alt="App Store"
               className="h-7 w-auto"

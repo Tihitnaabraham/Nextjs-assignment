@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import React, { useState, useRef } from "react";
 
 const products = [
@@ -168,7 +168,7 @@ export default function ExploreProducts() {
               </svg>
             </button>
             {}
-            <img
+            <Image
               src={p.image}
               alt={p.name}
               className="w-[180px] h-[180px] object-contain mb-2 bg-white rounded"

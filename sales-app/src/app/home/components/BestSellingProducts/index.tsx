@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 
 import React from "react";
 
@@ -87,7 +88,7 @@ export default function BestSellingProducts() {
               </svg>
             </button>
             {}
-            <img
+            <Image
               src={p.image}
               alt={p.name}
               className={`${p.highlight ? "w-[220px] h-[180px] mb-8" : "w-[180px] h-[150px] mb-6"} object-contain bg-white rounded`}

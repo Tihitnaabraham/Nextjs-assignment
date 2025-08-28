@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Header from '../shared-components/Header';
 import Navbar from '../shared-components/Navbar';
 import Footer from '../shared-components/Footer';
+import Image from 'next/image';
 
 export default function LoginPage() {
   return (
@@ -17,7 +18,7 @@ export default function LoginPage() {
           { }
           { }
           <div style={{ height: '610px', width: 'auto' }}>
-            <img
+            <Image
               src="/signup-image.png"
               alt="Mobile Shopping"
 
